@@ -16,6 +16,27 @@ Listed in [requirements.txt](requirements.txt):
 - python-xlib==0.31
 - six==1.16.0
 
+## Setup
+It is recommended to use virtual environment to set up the appropriate Python 
+environment, as described in the [documentation](https://docs.python.org/3/tutorial/venv.html):
+```
+python3 -m venv env
+```
+Activate the environment:
+* Windows:
+```
+env\Scripts\activate.bat
+```
+* Unix or MacOS:
+```
+source env/bin/activate
+```
+Install all the necessary packages:
+```
+python3 -m pip install -r requirements.txt
+```
+Now you should be ready to run the scripts, as described below.
+
 ## Scripts
 See the configuration options at the top of the scripts:
 - recordKeys.py
