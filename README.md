@@ -1,45 +1,31 @@
-SimKey
-======
+Record and Replay Keystrokes
+============================
 
-A Python script to record keystrokes and play them back at predefined intervals
+A pair of Python scripts for recording and replaying keystrokes with various 
+configuration options.
 
-Example:
+Uses [pynput](https://pypi.org/project/pynput/) library to control and 
+monitor input from keyboard.
 
-```
+## Requirements
+- Python3.7+
 
-```
-
-
-How to Run:
-
-* Activate the virtual environment
-
-Windows:
-```
-$ tutorial-env\Scripts\activate.bat
-```
-
-Unix or MacOS:
-```
-$ source tutorial-env/bin/activate
-```
-
-* Run your script:
-```
-$ python3 simulateKeys.py
-```
+Listed in [requirements.txt](requirements.txt):
+- evdev==1.4.0
+- pynput==1.7.5
+- python-xlib==0.31
+- six==1.16.0
 
 ## Scripts
+See the configuration options at the top of the scripts:
 - recordKeys.py
 - playKeys.py
-
 
 ### Record your keystrokes
 Run using:
 ```
 $ python3 recordKeys.py recording.txt
 ```
-
 When run, starts recording your keystrokes to a file. Only one key can be 
 recorded at a time, as it is with typing (but many keys can be released at the 
 same time).
@@ -72,6 +58,5 @@ Options you can set:
     integers in seconds
 - randomize time of press or release with a random offset, positive integer
     in milliseconds
-
 
 

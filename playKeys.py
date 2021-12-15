@@ -14,24 +14,24 @@ import random
 startKey = Key.shift
 
 # How many times to replay the sequence, 0 for forever 
-replaysTotal = 0
+replaysTotal = 1
 
 # Interval between replays, in _seconds_
-replayInterval: float = 3
+replayInterval: float = 0
 
 # Set to true to enable randomized interval between replays in range, in _seconds_
 #   <intervalMinBoundary, intervalMaxBoundary>
-randomizeInterval = False
-intervalMinBoundary: int = 10
-intervalMaxBoundary: int = 60
+randomizeInterval = False 
+intervalMinBoundary: int = 0
+intervalMaxBoundary: int = 2
 
 # Set to true to randomize time when keys pressed/released
-randomizePress = True
+randomizePress = False
 randomizeRelease = False
 # Adds random offset to time of key press or key release, in _milliseconds_
 #   * realPressTime = pressTime + rand<-offset, +offset>
-pressOffset: int = 100
-releaseOffset: int = 5
+pressOffset: int = 50
+releaseOffset: int = 50
 
 
 # ==============================================================================
